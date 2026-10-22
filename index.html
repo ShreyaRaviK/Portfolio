@@ -37,13 +37,12 @@
         <nav class="chassis-nav" aria-label="Main Navigation">
           <ul class="nav-list">
             <li><a href="#hero-telemetry" class="nav-link active" data-nav="hero"><span class="nav-num">01</span><span class="nav-title">// IDENTITY</span></a></li>
-            <li><a href="#cassette-station" class="nav-link" data-nav="cassette"><span class="nav-num">02</span><span class="nav-title">// TAPE DECK</span></a></li>
-            <li><a href="#research-experience" class="nav-link" data-nav="experience"><span class="nav-num">03</span><span class="nav-title">// DEPLOYMENTS</span></a></li>
-            <li><a href="#flagship-projects" class="nav-link" data-nav="projects"><span class="nav-num">04</span><span class="nav-title">// PROJECTS</span></a></li>
-            <li><a href="#memory-matrix" class="nav-link" data-nav="skills"><span class="nav-num">05</span><span class="nav-title">// MATRIX</span></a></li>
-            <li><a href="#academics-credentials" class="nav-link" data-nav="credentials"><span class="nav-num">06</span><span class="nav-title">// CREDENTIALS</span></a></li>
-            <li><a href="#terminal-interface" class="nav-link" data-nav="terminal"><span class="nav-num">07</span><span class="nav-title">// CONSOLE</span></a></li>
-            <li><a href="#contact-transmission" class="nav-link" data-nav="contact"><span class="nav-num">08</span><span class="nav-title">// DISPATCH</span></a></li>
+            <li><a href="#flagship-projects" class="nav-link" data-nav="projects"><span class="nav-num">02</span><span class="nav-title">// PROJECTS</span></a></li>
+            <li><a href="#research-experience" class="nav-link" data-nav="experience"><span class="nav-num">03</span><span class="nav-title">// EXPERIENCE</span></a></li>
+            <li><a href="#memory-matrix" class="nav-link" data-nav="skills"><span class="nav-num">04</span><span class="nav-title">// SKILLS</span></a></li>
+            <li><a href="#academics-credentials" class="nav-link" data-nav="credentials"><span class="nav-num">05</span><span class="nav-title">// CREDENTIALS</span></a></li>
+            <li><a href="#terminal-interface" class="nav-link" data-nav="terminal"><span class="nav-num">06</span><span class="nav-title">// CONSOLE</span></a></li>
+            <li><a href="#contact-transmission" class="nav-link" data-nav="contact"><span class="nav-num">07</span><span class="nav-title">// DISPATCH</span></a></li>
           </ul>
         </nav>
 
@@ -239,28 +238,59 @@
 
 
       <!-- ==============================================
-           SECTION 2: DUAL-CASSETTE TAPE DECK WORKBENCH
-           (Tactile Analog-Digital Interaction Module)
+           SECTION 2: FEATURED PROJECTS & RESEARCH
+           (Magnetic Cassette Showcase Player)
            ============================================== -->
-      <section class="section-container" id="cassette-station">
+      <section class="section-container" id="flagship-projects">
         <div class="section-badge-bar">
-          <span class="section-tag">[TAPE TRANSPORT ENGINE]</span>
-          <h2 class="section-title">MAGNETIC DATA DECK</h2>
-          <span class="section-meta">FORMAT: C-60 CHROME CASSETTE</span>
+          <span class="section-tag">[MAGNETIC STORAGE BANK]</span>
+          <h2 class="section-title">FEATURED PROJECTS & RESEARCH</h2>
+          <span class="section-meta">C-60 CASSETTE CHASSIS // 5 MISSION TRACKS</span>
         </div>
 
         <div class="cassette-deck-wrapper crt-panel">
+          
+          <!-- Deck Top Rim: Counter, Format, and Side/Group selector -->
           <div class="deck-top-rim">
             <div class="tape-counter-box" title="Magnetic Tape Counter">
               <span class="counter-label">INDEX</span>
-              <span class="counter-display" id="tapeCounter">0427</span>
+              <span class="counter-display" id="tapeCounter">0100</span>
             </div>
-            <span class="rim-text">HI-FI STEREO ANALOG MEMORY SYSTEM</span>
+            <span class="rim-text">HI-FI STEREO ANALOG MEMORY SYSTEM // TDK-AI 60</span>
             <div class="side-selector-container">
-              <span class="side-label">SELECT TRACK:</span>
-              <button class="side-btn active" id="btnSideA" data-side="A">SIDE A: COMPUTER VISION</button>
-              <button class="side-btn" id="btnSideB" data-side="B">SIDE B: DISTRIBUTED SYSTEMS</button>
+              <span class="side-label">SELECT BANK:</span>
+              <button class="side-btn active" id="btnSideA" data-side="A">SIDE A: COMPUTER VISION (TRK 1-3)</button>
+              <button class="side-btn" id="btnSideB" data-side="B">SIDE B: EDGE & SYSTEMS (TRK 4-5)</button>
             </div>
+          </div>
+
+          <!-- Tactile Track Selector Rack (5 Hardware Buttons) -->
+          <div class="track-selector-rack" role="tablist" aria-label="Project Tracks">
+            <button class="track-select-btn active" data-track-index="0" id="btnTrk0" role="tab" aria-selected="true">
+              <span class="track-led active"></span>
+              <span class="track-num">TRK 01</span>
+              <span class="track-label">IEEE SMART PARKING</span>
+            </button>
+            <button class="track-select-btn" data-track-index="1" id="btnTrk1" role="tab" aria-selected="false">
+              <span class="track-led"></span>
+              <span class="track-num">TRK 02</span>
+              <span class="track-label">OMR EVALUATION [1ST]</span>
+            </button>
+            <button class="track-select-btn" data-track-index="2" id="btnTrk2" role="tab" aria-selected="false">
+              <span class="track-led"></span>
+              <span class="track-num">TRK 03</span>
+              <span class="track-label">CROP DISEASE [99.1%]</span>
+            </button>
+            <button class="track-select-btn" data-track-index="3" id="btnTrk3" role="tab" aria-selected="false">
+              <span class="track-led"></span>
+              <span class="track-num">TRK 04</span>
+              <span class="track-label">ASSISTIVE MOBILITY</span>
+            </button>
+            <button class="track-select-btn" data-track-index="4" id="btnTrk4" role="tab" aria-selected="false">
+              <span class="track-led"></span>
+              <span class="track-num">TRK 05</span>
+              <span class="track-label">FSM E-COMMERCE</span>
+            </button>
           </div>
 
           <!-- Physical Cassette Representation -->
@@ -268,7 +298,7 @@
             <div class="cassette-label-sticker">
               <div class="cassette-header-line">
                 <span class="tape-brand">TDK-AI 60</span>
-                <span class="tape-title" id="tapeTitleDisplay">SIDE A: SMART PARKING & MOBILITY RESEARCH</span>
+                <span class="tape-title" id="tapeTitleDisplay">TRK 01: SMART PARKING & DYNAMIC PRICING</span>
                 <span class="tape-nr">DOLBY B-NR</span>
               </div>
               <div class="cassette-window">
@@ -289,7 +319,7 @@
                     <span class="tape-guide-notch"></span>
                   </div>
                   <div class="tape-specs-line">
-                    <span id="tapeTrackName">YOLOv12 & YOLOv8 PIPELINES</span>
+                    <span id="tapeTrackName">YOLOv12 & XGBoost // HIGH BIAS (CrO2)</span>
                   </div>
                 </div>
 
@@ -304,9 +334,9 @@
                 </div>
               </div>
               <div class="cassette-bottom-band">
-                <span>INDEX [04:27]</span>
+                <span id="tapeTrackIndexBadge">TRACK 01 OF 05</span>
                 <span>BIAS: HIGH (CrO2)</span>
-                <span>EQ: 70 µs</span>
+                <span>EQ: 70 µs // DOLBY ON</span>
               </div>
             </div>
 
@@ -323,108 +353,185 @@
           <!-- Physical Deck Controls -->
           <div class="deck-controls-strip">
             <div class="mechanical-buttons">
-              <button class="mech-btn" id="btnPlay" title="Play Tape Reel">
-                <span class="mech-icon">&#9658;</span>
-                <span class="mech-text">PLAY</span>
+              <button class="mech-btn" id="btnPrevProject" title="Previous Project Track">
+                <span class="mech-icon">&#9668;&#9668;</span>
+                <span class="mech-text">PREV TRACK</span>
               </button>
-              <button class="mech-btn" id="btnPause" title="Pause Tape">
+              <button class="mech-btn engaged" id="btnPlayTour" title="Auto-Tour Playback">
+                <span class="mech-icon">&#9658;</span>
+                <span class="mech-text">AUTO-TOUR</span>
+              </button>
+              <button class="mech-btn" id="btnPauseTour" title="Pause Auto-Tour">
                 <span class="mech-icon">&#10074;&#10074;</span>
                 <span class="mech-text">PAUSE</span>
               </button>
-              <button class="mech-btn" id="btnFastFwd" title="Fast Forward Track">
+              <button class="mech-btn" id="btnNextProject" title="Next Project Track">
                 <span class="mech-icon">&#9658;&#9658;</span>
-                <span class="mech-text">FAST-FWD</span>
+                <span class="mech-text">NEXT TRACK</span>
               </button>
-              <button class="mech-btn" id="btnRewind" title="Rewind Track">
-                <span class="mech-icon">&#9668;&#9668;</span>
-                <span class="mech-text">REWIND</span>
-              </button>
-              <button class="mech-btn eject-btn" id="btnEject" title="Switch Side">
+              <button class="mech-btn eject-btn" id="btnFlipSide" title="Flip Bank (Side A / Side B)">
                 <span class="mech-icon">&#9167;</span>
-                <span class="mech-text">FLIP SIDE</span>
+                <span class="mech-text">FLIP BANK</span>
               </button>
             </div>
             <div class="tape-status-indicator">
-              <span class="status-key">HEAD STATUS:</span>
-              <span class="status-value text-green" id="tapeStatusText">ENGAGED // PLAYING SIDE A</span>
+              <span class="status-key">DRIVE STATUS:</span>
+              <span class="status-value text-green" id="tapeStatusText">ENGAGED // TRACK 01 OF 05 // IEEE SMART PARKING</span>
             </div>
           </div>
 
-          <!-- Side Track Details Dynamic Box -->
-          <div class="track-details-display" id="trackDetailsBox">
-            <div class="track-info-header">
-              <span class="track-tag" id="trackBadge">CURRENT DISPATCH: SIDE A</span>
-              <span class="track-length">EST. READ TIME: 3 MIN</span>
-            </div>
-            <div class="track-body" id="trackBodyText">
-              <h3 class="track-name" id="trackHeader">DUAL AI & IoT SMART PARKING + ASSISTIVE MOBILITY PIPELINES</h3>
-              <p class="track-desc" id="trackDescription">
-                First author research presented at IEEE ICDICI 2025 integrating YOLOv12 automated license plate recognition with XGBoost dynamic slot pricing. Companion project: 8-week Infosys internship building assistive mobility systems for the visually impaired using YOLOv8, Ollama LLM contextual narrative, and multilingual audio feedback.
-              </p>
+          <!-- Active Project Showcase Display Stage -->
+          <div class="project-stage-display" id="projectStage">
+            <div class="project-stage-layout">
+              <!-- Left Column: CRT Mini Screen Graphic -->
+              <div class="stage-visual-col">
+                <div class="crt-mini-screen" id="stageScreen">
+                  <div class="scanline-bar"></div>
+                  <div class="screen-vector-holder" id="stageVectorHolder">
+                    <!-- Dynamic SVG injected via script.js -->
+                  </div>
+                  <div class="screen-hud-overlay">
+                    <span class="hud-left" id="stageHudLeft">BURST: 30 FPS</span>
+                    <span class="hud-right" id="stageHudRight">SHREYA LABS</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Project Technical Details -->
+              <div class="stage-details-col">
+                <div class="stage-bezel">
+                  <span class="bezel-badge green-badge" id="stageBadge">IEEE ICDICI 2025 // FIRST AUTHOR</span>
+                  <span class="bezel-id" id="stageTrackId">TRACK 01 // SRK-01</span>
+                </div>
+
+                <h3 class="stage-project-title" id="stageTitle">A Dual AI and IoT Approach to Smart Parking: License Plate Recognition and Dynamic Pricing</h3>
+
+                <!-- Key Metrics Readout Banner -->
+                <div class="metric-meter-banner" id="stageMetricsBanner">
+                  <div class="metric-block">
+                    <span class="m-val text-green">YOLOv12</span>
+                    <span class="m-lbl">Edge LPR Detection</span>
+                  </div>
+                  <div class="metric-divider"></div>
+                  <div class="metric-block">
+                    <span class="m-val text-amber">XGBoost</span>
+                    <span class="m-lbl">Dynamic Surge Model</span>
+                  </div>
+                  <div class="metric-divider"></div>
+                  <div class="metric-block">
+                    <span class="m-val text-beige">IEEE ICDICI</span>
+                    <span class="m-lbl">First Author Paper</span>
+                  </div>
+                </div>
+
+                <p class="stage-lead-text" id="stageLead">
+                  First-author research published and presented at the IEEE International Conference on Distributed Computing and Intelligent Innovations (ICDICI 2025). Architected an end-to-end intelligent parking automation ecosystem that unifies edge computer vision and adaptive econometric pricing.
+                </p>
+
+                <div class="stage-highlights-box">
+                  <div class="highlights-title">ENGINEERING SPECIFICATIONS & HIGHLIGHTS:</div>
+                  <ul class="project-highlights" id="stageHighlights">
+                    <li>Engineered real-time YOLOv12-based license plate recognition pipelines for vehicle verification and instant check-in/out.</li>
+                    <li>Developed XGBoost dynamic pricing models adjusting slot fees in real time based on occupancy metrics and predicted vehicle dwell times.</li>
+                    <li>Architected lightweight Flask REST microservices with SQLite for reliable transaction settlement and slot management.</li>
+                  </ul>
+                </div>
+
+                <!-- Tech Stack Tags -->
+                <div class="project-stack" id="stageTechStack">
+                  <span class="tech-tag">YOLOv12</span>
+                  <span class="tech-tag">XGBoost</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">SQLite</span>
+                  <span class="tech-tag">REST APIs</span>
+                  <span class="tech-tag">Python</span>
+                </div>
+
+                <!-- Action Links -->
+                <div class="stage-actions">
+                  <a href="https://github.com/ShreyaRaviK" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="stageGithubLink">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>VIEW REPOSITORY</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- Quick Project Index Grid (5 Quick Select Cards) -->
+          <div class="project-quick-index">
+            <div class="index-grid-header">
+              <span class="index-title">// QUICK TAPE INDEX (CLICK TO LOAD)</span>
+              <span class="index-count">5 ACTIVE TRACKS</span>
+            </div>
+            <div class="index-cards-row">
+              <button class="index-mini-card active" data-track-index="0">
+                <span class="mini-card-num">01</span>
+                <div class="mini-card-info">
+                  <span class="mini-card-title">IEEE Smart Parking</span>
+                  <span class="mini-card-tech">YOLOv12 · XGBoost · Flask</span>
+                </div>
+                <span class="mini-card-status">LOADED</span>
+              </button>
+              <button class="index-mini-card" data-track-index="1">
+                <span class="mini-card-num">02</span>
+                <div class="mini-card-info">
+                  <span class="mini-card-title">OMR Evaluation</span>
+                  <span class="mini-card-tech">YOLOv12 · Streamlit · 1st Place</span>
+                </div>
+                <span class="mini-card-status">READY</span>
+              </button>
+              <button class="index-mini-card" data-track-index="2">
+                <span class="mini-card-num">03</span>
+                <div class="mini-card-info">
+                  <span class="mini-card-title">Crop Disease AI</span>
+                  <span class="mini-card-tech">CNN · EfficientNet · 99.13%</span>
+                </div>
+                <span class="mini-card-status">READY</span>
+              </button>
+              <button class="index-mini-card" data-track-index="3">
+                <span class="mini-card-num">04</span>
+                <div class="mini-card-info">
+                  <span class="mini-card-title">Assistive Mobility</span>
+                  <span class="mini-card-tech">YOLOv8 · Ollama · Infosys</span>
+                </div>
+                <span class="mini-card-status">READY</span>
+              </button>
+              <button class="index-mini-card" data-track-index="4">
+                <span class="mini-card-num">05</span>
+                <div class="mini-card-info">
+                  <span class="mini-card-title">FSM E-Commerce</span>
+                  <span class="mini-card-tech">React · WebSockets · 18ms</span>
+                </div>
+                <span class="mini-card-status">READY</span>
+              </button>
+            </div>
+          </div>
+
         </div>
       </section>
 
 
       <!-- ==============================================
-           SECTION 3: RESEARCH & PROFESSIONAL DEPLOYMENTS
-           (Asymmetric Timeline Grid)
+           SECTION 3: PROFESSIONAL EXPERIENCE & INTERNSHIPS
+           (Chronological Deployment Timeline)
            ============================================== -->
       <section class="section-container" id="research-experience">
         <div class="section-badge-bar">
-          <span class="section-tag">[HISTORICAL ARCHIVE]</span>
-          <h2 class="section-title">DEPLOYMENTS & EXPERIENCE</h2>
-          <span class="section-meta">TOTAL EXP: 4 MISSION LOGS</span>
+          <span class="section-tag">[OPERATIONAL TIMELINE]</span>
+          <h2 class="section-title">PROFESSIONAL EXPERIENCE & DEPLOYMENTS</h2>
+          <span class="section-meta">TOTAL EXP: 3 MISSION LOGS</span>
         </div>
 
         <div class="experience-asymmetric-layout">
           
-          <!-- Large Feature Card: IEEE ICDICI 2025 First Author -->
+          <!-- Experience Card 1: Infosys Springboard 6.0 -->
           <article class="exp-card feature-card crt-panel">
             <div class="exp-header">
               <div class="exp-role-meta">
-                <span class="exp-badge green">FIRST AUTHOR IEEE RESEARCHER</span>
-                <h3 class="exp-role">Smart Parking Platform & Dynamic Pricing Architecture</h3>
-                <span class="exp-org">IEEE (ICDICI 2025)</span>
-              </div>
-              <div class="exp-time">
-                <span class="time-stamp">10 JULY 2025</span>
-                <span class="loc-stamp">IRUNGALUR / HYBRID</span>
-              </div>
-            </div>
-
-            <div class="exp-body">
-              <p class="exp-lead">
-                First author of an IEEE research paper presented at the 2025 International Conference on Distributed Computing and Intelligent Innovations (ICDICI 2025):
-              </p>
-              <div class="paper-citation-box">
-                <span class="paper-quote-icon">“</span>
-                <span class="paper-title">A Dual AI and IoT Approach to Smart Parking: License Plate Recognition and Dynamic Pricing</span>
-                <span class="paper-quote-icon">”</span>
-              </div>
-              <ul class="exp-points">
-                <li>Designed and developed an end-to-end smart parking platform combining Flask, JavaScript, and SQLite.</li>
-                <li>Integrated <strong>YOLOv12-based license plate recognition</strong> for high-accuracy vehicle verification and automated slot assignment.</li>
-                <li>Engineered <strong>XGBoost-based dynamic pricing models</strong> adapting parking tariffs in real time based on occupancy metrics and predicted vehicle dwell times.</li>
-                <li>Architected scalable REST APIs for low-latency vehicle tracking, slot allocation, and transaction settlement.</li>
-              </ul>
-              <div class="exp-tech-tags">
-                <span class="tech-tag">YOLOv12</span>
-                <span class="tech-tag">XGBoost</span>
-                <span class="tech-tag">Flask</span>
-                <span class="tech-tag">SQLite</span>
-                <span class="tech-tag">REST APIs</span>
-                <span class="tech-tag">IoT Architecture</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Medium Feature Card: Infosys Springboard 6.0 -->
-          <article class="exp-card crt-panel">
-            <div class="exp-header">
-              <div class="exp-role-meta">
-                <span class="exp-badge amber">ENGINEERING INTERNSHIP</span>
+                <span class="exp-badge amber">AI SYSTEMS ENGINEERING INTERNSHIP</span>
                 <h3 class="exp-role">AI-Powered Assistive Mobility Tool for Visually Impaired</h3>
                 <span class="exp-org">Infosys Springboard Virtual Internship 6.0</span>
               </div>
@@ -435,12 +542,12 @@
             </div>
 
             <div class="exp-body">
-              <p>
-                Spearheaded development of a real-time assistive mobility instrument enabling visually impaired users to navigate spatial obstacles through computer vision and edge voice synthesis.
+              <p class="exp-lead">
+                Spearheaded development of an edge assistive mobility navigation system empowering visually impaired users to perceive and safely navigate obstacles through computer vision, local LLM spatial descriptions, and hands-free voice synthesis:
               </p>
               <ul class="exp-points">
-                <li>Implemented real-time <strong>YOLOv8 object detection</strong> for dynamic obstacle identification and hazard proximity estimation.</li>
-                <li>Constructed a modular <strong>Django backend</strong> integrated with <strong>PostgreSQL</strong> for persistent user session telemetry.</li>
+                <li>Implemented real-time <strong>YOLOv8 object detection</strong> for dynamic obstacle identification, direction tracking, and proximity hazard estimation.</li>
+                <li>Constructed a modular <strong>Django backend</strong> integrated with <strong>PostgreSQL</strong> for persistent user session telemetry and sensory mapping.</li>
                 <li>Integrated <strong>LLM-based (Ollama) contextual text generation</strong> to convert raw bounding boxes into concise, natural navigation directives.</li>
                 <li>Engineered <strong>multilingual audio feedback</strong> for hands-free, low-latency sensory output.</li>
               </ul>
@@ -450,37 +557,15 @@
                 <span class="tech-tag">Django</span>
                 <span class="tech-tag">PostgreSQL</span>
                 <span class="tech-tag">Audio Synthesis</span>
+                <span class="tech-tag">Python</span>
               </div>
             </div>
           </article>
 
-          <!-- Split Sub-Grid for Intern & Community Service -->
+          <!-- Split Sub-Grid for Civic Tech & Technopark Internships -->
           <div class="exp-subgrid">
             
-            <article class="exp-card compact crt-panel">
-              <div class="exp-header">
-                <div class="exp-role-meta">
-                  <span class="exp-badge">AI INTERNSHIP</span>
-                  <h3 class="exp-role">AI & ML Systems Research Intern</h3>
-                  <span class="exp-org">Srishti Innovative Educational Services</span>
-                </div>
-                <div class="exp-time">
-                  <span class="time-stamp">09 DEC 2024 – 20 DEC 2024</span>
-                  <span class="loc-stamp">Technopark, Trivandrum</span>
-                </div>
-              </div>
-              <div class="exp-body">
-                <p>
-                  Completed intensive AI training acquiring hands-on mastery over core machine learning algorithms, model training workflows, feature engineering, and neural network tuning pipelines.
-                </p>
-                <div class="exp-tech-tags">
-                  <span class="tech-tag">Core ML</span>
-                  <span class="tech-tag">Model Pipelines</span>
-                  <span class="tech-tag">Technopark</span>
-                </div>
-              </div>
-            </article>
-
+            <!-- Experience Card 2: Sevabharathi Taliparamba -->
             <article class="exp-card compact crt-panel">
               <div class="exp-header">
                 <div class="exp-role-meta">
@@ -497,6 +582,10 @@
                 <p>
                   Built a community outreach web portal to streamline care requests for palliative care patients, delivering hands-on support and digital coordination tools for healthcare volunteers.
                 </p>
+                <ul class="exp-points">
+                  <li>Structured patient request intake and priority dispatch workflows.</li>
+                  <li>Delivered accessible interfaces for field volunteers and families.</li>
+                </ul>
                 <div class="exp-tech-tags">
                   <span class="tech-tag">Web Portal</span>
                   <span class="tech-tag">Community Health</span>
@@ -505,179 +594,31 @@
               </div>
             </article>
 
-          </div>
-
-        </div>
-      </section>
-
-
-      <!-- ==============================================
-           SECTION 4: FLAGSHIP PROJECTS (ASYMMETRIC GRID)
-           ============================================== -->
-      <section class="section-container" id="flagship-projects">
-        <div class="section-badge-bar">
-          <span class="section-tag">[OPERATIONAL PROTOTYPES]</span>
-          <h2 class="section-title">FLAGSHIP LAB PROJECTS</h2>
-          <span class="section-meta">NO EQUAL 3-COLUMNS // ASYMMETRIC CHASSIS</span>
-        </div>
-
-        <div class="projects-asymmetric-container">
-          
-          <!-- PROJECT 1: Automated OMR Evaluation System (Wide Highlight Card) -->
-          <article class="project-card hero-project crt-panel">
-            <div class="project-bezel">
-              <div class="bezel-badge red-badge">CODE4EDTECH CHALLENGE // 1ST PLACE</div>
-              <div class="bezel-id">PRJ-01 // INNOMATICS RESEARCH LABS</div>
-            </div>
-
-            <div class="project-inner-layout">
-              <div class="project-display-window">
-                <div class="crt-mini-screen">
-                  <div class="scanline-bar"></div>
-                  <!-- Vector Graphic of OMR Sheet Detection -->
-                  <svg class="omr-vector-visual" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="240" fill="#1b2838" />
-                    <!-- Sheet outline -->
-                    <rect x="50" y="20" width="300" height="200" stroke="#d2b48c" stroke-width="2" stroke-dasharray="4 2" fill="#242624" />
-                    <text x="70" y="45" fill="#33ff00" font-family="VT323" font-size="16">OMR DETECT PIPELINE [YOLOv12]</text>
-                    <rect x="70" y="55" width="260" height="1" fill="#33ff00" opacity="0.4" />
-                    <!-- Bubble rows -->
-                    <circle cx="90" cy="80" r="7" stroke="#33ff00" stroke-width="1.5" />
-                    <circle cx="120" cy="80" r="7" fill="#33ff00" />
-                    <circle cx="150" cy="80" r="7" stroke="#33ff00" stroke-width="1.5" />
-                    <circle cx="180" cy="80" r="7" stroke="#33ff00" stroke-width="1.5" />
-                    <text x="210" y="84" fill="#ffb000" font-family="JetBrains Mono" font-size="11">Q1: [B] CONF 0.99</text>
-
-                    <circle cx="90" cy="115" r="7" stroke="#33ff00" stroke-width="1.5" />
-                    <circle cx="120" cy="115" r="7" stroke="#33ff00" stroke-width="1.5" />
-                    <circle cx="150" cy="115" r="7" stroke="#33ff00" stroke-width="1.5" />
-                    <circle cx="180" cy="115" r="7" fill="#33ff00" />
-                    <text x="210" y="119" fill="#ffb000" font-family="JetBrains Mono" font-size="11">Q2: [D] CONF 0.98</text>
-
-                    <circle cx="90" cy="150" r="7" fill="#33ff00" />
-                    <circle cx="120" cy="150" r="7" stroke="#33ff00" stroke-width="1.5" />
-                    <circle cx="150" cy="150" r="7" stroke="#33ff00" stroke-width="1.5" />
-                    <circle cx="180" cy="150" r="7" stroke="#33ff00" stroke-width="1.5" />
-                    <text x="210" y="154" fill="#ffb000" font-family="JetBrains Mono" font-size="11">Q3: [A] CONF 0.99</text>
-
-                    <!-- Scan Bounding Box Overlay -->
-                    <rect x="75" y="65" width="125" height="105" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="6 3" />
-                    <text x="80" y="195" fill="#e8e0d0" font-family="VT323" font-size="14">&gt;&gt; REAL-TIME BUBBLE SCORING ENGINE</text>
-                    <rect x="260" y="180" width="80" height="25" fill="#33ff00" />
-                    <text x="272" y="197" fill="#1b2838" font-family="VT323" font-size="16" font-weight="700">PASS 100%</text>
-                  </svg>
-                  <div class="screen-hud-overlay">
-                    <span class="hud-left">BURST: 30 FPS</span>
-                    <span class="hud-right">INNOMATICS LABS</span>
-                  </div>
+            <!-- Experience Card 3: Srishti Innovative, Technopark -->
+            <article class="exp-card compact crt-panel">
+              <div class="exp-header">
+                <div class="exp-role-meta">
+                  <span class="exp-badge">AI RESEARCH INTERNSHIP</span>
+                  <h3 class="exp-role">AI & ML Systems Research Intern</h3>
+                  <span class="exp-org">Srishti Innovative Educational Services</span>
+                </div>
+                <div class="exp-time">
+                  <span class="time-stamp">09 DEC 2024 – 20 DEC 2024</span>
+                  <span class="loc-stamp">Technopark, Trivandrum</span>
                 </div>
               </div>
-
-              <div class="project-details">
-                <h3 class="project-title">Automated OMR Evaluation and Scoring System</h3>
-                <p class="project-lead-text">
-                  Implemented an AI-powered OMR evaluation system using a custom <strong>YOLOv12 model</strong> with Streamlit and Flask for real-time bubble detection and automated scoring. Won 1st place and a ₹1,00,000 cash prize at the Code4EdTech Challenge Hackathon by Innomatics Research Labs, Hyderabad.
+              <div class="exp-body">
+                <p>
+                  Completed intensive AI training acquiring hands-on mastery over core machine learning algorithms, model training workflows, feature engineering, and neural network tuning pipelines.
                 </p>
-                <ul class="project-highlights">
-                  <li>Trained custom YOLOv12 weights for shaded optical bubble identification resilient to non-uniform lighting and skewed mobile phone camera feeds.</li>
-                  <li>Streamlit interactive visual verification frontend with Flask backend API serving inferences.</li>
-                  <li>Instant grading ledger export with cryptographic score hash generation.</li>
+                <ul class="exp-points">
+                  <li>Benchmarked supervised classification and regression models.</li>
+                  <li>Constructed automated data preprocessing and feature scaling scripts.</li>
                 </ul>
-                <div class="project-stack">
-                  <span class="tech-tag">YOLOv12</span>
-                  <span class="tech-tag">Streamlit</span>
-                  <span class="tech-tag">Flask</span>
-                  <span class="tech-tag">OpenCV</span>
-                  <span class="tech-tag">Python</span>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Split Zig-Zag Rows for Project 2 and Project 3 -->
-          <div class="projects-secondary-row">
-            
-            <!-- PROJECT 2: Crop Disease Detection (Asymmetric Tall Card) -->
-            <article class="project-card crt-panel">
-              <div class="project-bezel">
-                <div class="bezel-badge green-badge">99.13% VALIDATION ACCURACY</div>
-                <div class="bezel-id">PRJ-02 // AGRI-AI PIPELINE</div>
-              </div>
-
-              <div class="project-details full-pad">
-                <h3 class="project-title">Crop Disease Detection and Classification with Severity Stratification</h3>
-                
-                <div class="metric-meter-banner">
-                  <div class="metric-block">
-                    <span class="m-val text-green">99.13%</span>
-                    <span class="m-lbl">CNN Validation Acc</span>
-                  </div>
-                  <div class="metric-divider"></div>
-                  <div class="metric-block">
-                    <span class="m-val text-amber">1.47</span>
-                    <span class="m-lbl">Severity RMSE</span>
-                  </div>
-                </div>
-
-                <p class="project-lead-text">
-                  Constructed a dual-stage hybrid crop disease diagnosis system combining a Sequential CNN for pathogen classification with an EfficientNet-B3 backbone for quantitative severity stratification.
-                </p>
-                
-                <ul class="project-highlights">
-                  <li>Formulated end-to-end dataset pipeline handling multi-class foliar infections across variable field conditions.</li>
-                  <li>Deployed Sequential CNN achieving <strong>99.13% validation accuracy</strong> for disease species classification.</li>
-                  <li>Integrated fine-tuned <strong>EfficientNet-B3 regression model</strong> predicting leaf infection severity stage (RMSE: 1.47).</li>
-                  <li>Complete technical documentation on architecture, loss convergence, and evaluation metrics.</li>
-                </ul>
-
-                <div class="project-stack">
-                  <span class="tech-tag">Sequential CNN</span>
-                  <span class="tech-tag">EfficientNet-B3</span>
-                  <span class="tech-tag">TensorFlow</span>
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Data Pipeline</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- PROJECT 3: Dynamic E-Commerce Platform (Asymmetric Wide Card) -->
-            <article class="project-card crt-panel">
-              <div class="project-bezel">
-                <div class="bezel-badge amber-badge">18.47 ms AVG RESPONSE LATENCY</div>
-                <div class="bezel-id">PRJ-03 // DISTRIBUTED SYSTEMS</div>
-              </div>
-
-              <div class="project-details full-pad">
-                <h3 class="project-title">Dynamic E-Commerce Platform with Finite State Machine Lifecycle</h3>
-                
-                <div class="metric-meter-banner">
-                  <div class="metric-block">
-                    <span class="m-val text-green">18.47 ms</span>
-                    <span class="m-lbl">Avg Response Latency</span>
-                  </div>
-                  <div class="metric-divider"></div>
-                  <div class="metric-block">
-                    <span class="m-val text-beige">FSM</span>
-                    <span class="m-lbl">State Machine Engine</span>
-                  </div>
-                </div>
-
-                <p class="project-lead-text">
-                  Engineered a high-performance real-time e-commerce architecture utilizing React, Flask, Firebase Realtime Database, and WebSockets to synchronize checkout states with deterministic zero race conditions.
-                </p>
-                
-                <ul class="project-highlights">
-                  <li>Built Finite State Machine (FSM) managing product lifecycle: stock reservation, cart lease, checkout transition, and order settlement.</li>
-                  <li>Implemented real-time bidirectional WebSocket pipes for scalable multi-client inventory sync.</li>
-                  <li>Benchmarked REST endpoints maintaining an ultra-lean <strong>18.47 ms average latency</strong> under simultaneous order workflows.</li>
-                </ul>
-
-                <div class="project-stack">
-                  <span class="tech-tag">React</span>
-                  <span class="tech-tag">Flask</span>
-                  <span class="tech-tag">Firebase Realtime DB</span>
-                  <span class="tech-tag">WebSockets</span>
-                  <span class="tech-tag">FSM Architecture</span>
+                <div class="exp-tech-tags">
+                  <span class="tech-tag">Core ML</span>
+                  <span class="tech-tag">Model Pipelines</span>
+                  <span class="tech-tag">Technopark</span>
                 </div>
               </div>
             </article>
@@ -689,7 +630,7 @@
 
 
       <!-- ==============================================
-           SECTION 5: MEMORY MATRIX / HARDWARE SKILLS
+           SECTION 4: MEMORY MATRIX / HARDWARE SKILLS
            (Cassette Futurism Memory Bank Layout)
            ============================================== -->
       <section class="section-container" id="memory-matrix">
@@ -812,7 +753,7 @@
 
 
       <!-- ==============================================
-           SECTION 6: ACADEMICS & CREDENTIALS RACK
+           SECTION 5: ACADEMICS & CREDENTIALS RACK
            ============================================== -->
       <section class="section-container" id="academics-credentials">
         <div class="section-badge-bar">
@@ -987,7 +928,7 @@
 
 
       <!-- ==============================================
-           SECTION 7: COMMAND-LINE INTERFACE CONSOLE
+           SECTION 6: COMMAND-LINE INTERFACE CONSOLE
            (Interactive CLI terminal emulator)
            ============================================== -->
       <section class="section-container" id="terminal-interface">
@@ -1037,7 +978,7 @@
 
 
       <!-- ==============================================
-           SECTION 8: CONTACT TELEX TRANSMITTER
+           SECTION 7: CONTACT TELEX TRANSMITTER
            ============================================== -->
       <section class="section-container" id="contact-transmission">
         <div class="section-badge-bar">
